@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, TouchableOpacity, Button } from 'react-native';
 
 export default function App() {
   // Mapeamento de teclas
-  const buttons = ['LIMPAR', 'DEL', '%', '/', 7, 8, 9, "x", 6, 5, 4, '-', 3, 2, 1, '+', 0, '.', '+/-', '=']
+  const buttons = ['LIMPAR', 'DEL', '%', '/', 9, 8, 7, "x", 6, 5, 4, '-', 3, 2, 1, '+', 0, '.', '+/-', '=']
 
   const [currentNumber, setCurrentNumber] = useState("")
   const [lastNumber, setLastNumber] = useState("")
@@ -66,7 +66,7 @@ export default function App() {
       <View style={styles.results}>
         <Text style={styles.historyText}>{lastNumber}</Text>
         <Text style={styles.resultText}>{currentNumber}</Text>
-        </View>
+       </View>
       <View>
 
       {/* Area onde os botões são exibidos*/}
@@ -84,7 +84,7 @@ export default function App() {
         )}
       </View>
     </View>
-    </View>
+   </View>
   );
 }
 
